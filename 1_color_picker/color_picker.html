@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              roboto: ["Roboto"]
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen">
+    <div id = "colorPickerContainer" class="min-h-screen flex justify-center items-center">
+        <div class="items-center items-center text-center p-6">
+            <h1 class="text-2xl font-bold">Color Picker</h1>
+            <div class="flex flex-row justify-between p-6">
+                <button id = "button1" onclick="button1()" class="w-20 h-20 rounded-xl border-2 border-gray-800 bg-[#e0e0e0]">#e0e0e0</button>
+                <button id = "button2" onclick="button2()" class="w-20 h-20 rounded-xl border-2 border-gray-800 bg-[#6fcf97]">#6fcf97</button>
+                <button id = "button3" onclick="button3()" class="w-20 h-20 rounded-xl border-2 border-gray-800 bg-[#56ccf2]">#56ccf2</button>
+                <button id = "button4" onclick="button4()" class="w-20 h-20 rounded-xl border-2 border-gray-800 bg-[#bb6bd9]">#bb6bd9</button>
+            </div>
+            <p class="py-2 bg-gray-900 text-white rounded-md font-medium">Background Color : <span id = "selectedColorHexCode" class="text-blue-400">#fffff</span></p>
+            <p class="py-2">Try clicking on one of the colors above to change the background color of this page!</p>
+        </div>
+    </div>
+    <script src="color_picker.js"></script>
+  </body>
+</html>
