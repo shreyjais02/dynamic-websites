@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              roboto: ["Roboto"]
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen flex justify-center align-center bg-sky-300 font-roboto">
+    <div>
+      <h1 class="text-3xl font-bold text-[#1f1d41] my-6">Traffic Light</h1>
+      <div class="flex gap-8 items-center">
+        <div class="flex flex-col items-center">
+          <button onclick = "stopbtn()" id = "stopButton" class="text-white bg-[#1f1d41] px-4 py-2 my-4 rounded-lg">Stop</button>
+          <button onclick = "readybtn()" id = "readyButton" class="text-white bg-[#1f1d41] px-4 py-2 my-4 rounded-lg">Ready</button>
+          <button onclick = "gobtn()" id = "goButton" class="text-white bg-[#1f1d41] px-4 py-2 my-4 rounded-lg">Go</button>
+        </div>
+        <div class="bg-[#1f1d41] h-64 w-20 rounded-3xl flex flex-col align-center justify-around p-4">
+          <div id = "stopLight" class="w-12 h-12 bg-[#4b5069] rounded-full"></div>
+          <div id = "readyLight" class="w-12 h-12 bg-[#4b5069] rounded-full"></div>
+          <div id = "goLight" class="w-12 h-12 bg-[#4b5069] rounded-full"></div>
+        </div>
+      </div>
+    </div>
+    <script src="traffic_light.js"></script>
+  </body>
+</html>
