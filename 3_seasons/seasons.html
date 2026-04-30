@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ["Roboto"]
+                    },
+                },
+            },
+        };
+    </script>
+    <script src="seasons.js"></script>
+</head>
+
+<body>
+    <div>
+        <img id = "seasonSmallImage" src="https://d2clawv67efefq.cloudfront.net/ccbp-dynamic-webapps/seasons-switcher-four-seasons-xs-img.png" class="season-image md:hidden" />
+        <img id = "seasonMediumImage" src="https://d2clawv67efefq.cloudfront.net/ccbp-dynamic-webapps/seasons-switcher-four-seasons-md-img.png" class="season-image hidden md:block" />
+        <div class="flex flex-row justify-center mt-5">
+            <button id = "springBtn" onclick="spring()" class="px-3 h-10 mx-2 text-white bg-green-500 rounded-lg">Spring</button>
+            <button id = "summerBtn" onclick="summer()" class="px-3 h-10 mx-2 text-white bg-yellow-500 rounded-lg">Summer</button>
+            <button id = "autumnBtn" onclick="autumn()" class="px-3 h-10 mx-2 text-white bg-red-500 rounded-lg">Autumn</button>
+            <button id = "winterBtn" onclick="winter()" class="px-3 h-10 mx-2 text-white bg-blue-500 rounded-lg">Winter</button>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
